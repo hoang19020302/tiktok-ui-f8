@@ -8,9 +8,9 @@ import styles from './AccountItem.module.scss';
 
 const cx = classNames.bind(styles);
 
-function AccountItem({ data }) {
+function AccountItem({ data, onClick }) {
     return (
-        <Link to={`/profile/${data.nickname}`} className={cx('wrapper')}>
+        <Link to={`/profile/${data.nickname}`} className={cx('wrapper')} onClick={onClick}>
             <Image
                 className={cx('avatar')}
                 src={data.avatar}
@@ -30,6 +30,7 @@ function AccountItem({ data }) {
 
 AccountItem.propTypes = {
     data: PropTypes.object.isRequired,
+    onClick: PropTypes.func,
 }
 
 export default AccountItem;
