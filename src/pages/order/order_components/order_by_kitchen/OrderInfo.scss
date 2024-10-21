@@ -1,0 +1,93 @@
+.order-info-wrapper {
+  border-top: 1px solid var(--border_color);
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  margin-bottom: 15px;
+  .order-info-container {
+    .order-info-header {
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border_color);
+      .left-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .logo {
+          padding-right: 10px;
+        }
+        .customer-info {
+          color: #70450c;
+          font-size: 17px;
+          font-weight: 700;
+        }
+      }
+      .right-header {
+        .price-info {
+          color: #000000;
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .dish-container {
+      display: flex;
+      flex-direction: column;
+      color: #70450c;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border_color);
+      .dish-name {
+        padding: 0 20px;
+        font-size: 19px;
+        font-weight: 500;
+      }
+      .topping-name {
+        padding: 0 20px;
+        font-size: 12px;
+        font-weight: lighter;
+      }
+    }
+
+    .note-container {
+      display: flex;
+      flex-direction: row;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border_color);
+      .note-icon {
+        padding: 0 20px;
+      }
+      .note-text {
+        color: #a7a2a2;
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+
+    .time-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 20px;
+      .time-container {
+        display: flex;
+        flex-direction: row;
+      }
+      .order-action {
+        background-color: #70450c;
+        color: white;
+        padding-right: 20px;
+        height: auto !important;
+        .button-title {
+          font-size: 19px;
+          font-weight: 500;
+          padding: 0px 32px !important;
+        }
+      }
+    }
+  }
+}

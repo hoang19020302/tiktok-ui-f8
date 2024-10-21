@@ -1,0 +1,30 @@
+.login-form {
+  position: fixed;
+  height: 500px;
+  width: 400px;
+  z-index: 50;
+  top: 30%;
+  right: 100px;
+  background-color: #fff3e4;
+  border-radius: 15px;
+  .login-content {
+    padding: 20px 15px;
+    .login-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: #9c6317;
+    }
+    .account-field {
+      width: 100%;
+      .account-input {
+        width: 100%;
+        .input-text {
+          width: 100%;
+          padding: 0 !important;
+          padding-block: 0 !important;
+          padding-inline: 0 !important;
+        }
+      }
+    }
+  }
+}

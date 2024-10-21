@@ -1,0 +1,17 @@
+.agency-info-wrapper {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  color: #532f00;
+  font-size: 17px;
+  font-weight: 700;
+  .info-field-container {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid var(--border_color);
+    .info-field-icon {
+      padding: 0 10px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.modal-content-container {
+  display: flex;
+  height: var(--modal_height);
+}
+
+.ant-modal-content {
+  border-radius: 15px !important;
+  background-color: transparent;
+  /* #fef2e4 !important; */
+  padding: 0px !important;
+}
+.ant-modal-body {
+  background-color: #ffffff;
+  border-radius: 0 0 15px 15px;
+}
+.ant-modal-header {
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  margin: 0 !important;
+  background-color: #fef2e4 !important;
+}
+.ant-modal-close {
+  width: 40px;
+  height: 40px;
+}
+
+.modal-scrollable-content {
+  background-color: #ffffff;
+  flex: 1.5;
+  overflow-y: auto;
+  border-right: 1px solid #f0f0f0;
+  border-radius: 0 0 0 15px;
+}
+
+.modal-static-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 0 15px 0;
+}
+
+.modal-footer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.modal-footer button {
+  width: 43%;
+}
+.cancel-button {
+  background-color: #e7e7e7;
+  color: #532f00;
+  font-size: 19px;
+  font-weight: 500;
+}
+.accept-button {
+  background-color: #532f00;
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+}

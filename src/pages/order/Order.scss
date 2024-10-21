@@ -1,0 +1,33 @@
+.center-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  color: #532f00;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.ant-modal-body {
+  border-radius: 15px !important;
+}
+
+.success-wrapper {
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  gap: 2.5em;
+  border-radius: 15px;
+  .success-icon {
+    width: 40%;
+  }
+  .success-text {
+    color: #1a1a1a;
+    font-size: 19px;
+    font-weight: 500;
+  }
+}
