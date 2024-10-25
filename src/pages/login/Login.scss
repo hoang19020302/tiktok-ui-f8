@@ -1,30 +1,87 @@
-.login-form {
-  position: fixed;
-  height: 500px;
-  width: 400px;
-  z-index: 50;
-  top: 30%;
-  right: 100px;
-  background-color: #fff3e4;
-  border-radius: 15px;
-  .login-content {
-    padding: 20px 15px;
-    .login-title {
-      font-size: 30px;
-      font-weight: 700;
-      color: #9c6317;
-    }
-    .account-field {
-      width: 100%;
-      .account-input {
-        width: 100%;
-        .input-text {
-          width: 100%;
-          padding: 0 !important;
-          padding-block: 0 !important;
-          padding-inline: 0 !important;
-        }
-      }
-    }
+.login-page {
+  position: relative; /* Đặt phần tử cha làm gốc để phần tử con có thể định vị tuyệt đối */
+  width: 100%;
+  height: 100vh; /* Chiều cao 100% viewport */
+}
+
+.login-container {
+  position: fixed; /* Định vị phần partner section tuyệt đối */
+  top: 30%; /* Điều chỉnh vị trí trên so với hình ảnh (tuỳ chỉnh theo nhu cầu) */
+  right: 90px;
+  background-color: #f5e9da;
+  padding: 10px;
+  border-radius: 10px;
+  width: 350px;
+  // margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-title {
+  font-size: 24px;
+  color: #a16e45;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+label {
+  width: 90%;
+  //padding-right: 15px;
+  text-align: left;
+  font-size: 16px;
+  color: #6e6e6e;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.input-field {
+  width: 90%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+
+  /* Khi người dùng focus vào input, hiển thị viền màu xanh */
+  &:focus {
+    border-color: #70450c;
+    outline: none;
   }
+}
+
+.login-button-big {
+  font-size: 16px; /* Kích thước chữ */
+  font-weight: 500;
+  background-color: #a16e45;
+  color: white;
+  padding: 12px;
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #8e5b35;
+  }
+}
+
+.forgot-password-link {
+  font-size: 14px;
+  color: #6e6e6e;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
 }

@@ -1,20 +1,13 @@
-import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Homepage from "./pages/hompage/HomePage";
-import LoginPage from "./pages/login/Login";
-import OrderPage from "./pages/order/Order";
+import "./App.css"; // Import CSS cho ứng dụng
+import LoginPage from "./pages/login/Login"; // Import LoginPage component
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" Component={Homepage}></Route>
-          <Route path="/login" Component={LoginPage}></Route>
-          <Route path="/orders" Component={OrderPage}></Route>
-        </Routes>
-      </div>
-    </Router>
+    <div className="App">
+      <LoginPage /> {/* Hiển thị LoginPage */}
+      {/* Nếu bạn muốn hiển thị RegisterPage thay vì LoginPage, đổi dòng trên thành: */}
+      {/* <RegisterPage /> */}
+    </div>
   );
 }
 
