@@ -5,7 +5,9 @@ function BlankHeader() {
     <div className="header-wrapper">
       <div className="header-container">
         <div className="logo-container">
-          <img src="images/name_app.png" alt="" />
+          <a href="/">
+            <img src="images/name_app.png" alt="" />
+          </a>
         </div>
         <div className="account-container">
           <a href="/login" className="login-button">

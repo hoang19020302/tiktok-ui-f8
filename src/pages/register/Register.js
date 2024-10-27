@@ -2,6 +2,7 @@ import React from "react";
 import "./Register.scss";
 import BlankHeader from "../../share_cpn/blank_header/BlankHeader";
 import ButtonSquare from "../../share_cpn/button_square/ButtonSquare";
+import "../../styles/background.scss";
 
 function RegisterPage() {
   return (

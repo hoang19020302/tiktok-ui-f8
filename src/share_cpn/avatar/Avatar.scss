@@ -1,0 +1,12 @@
+.avatar-container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; // Màu nền mặc định nếu không có ảnh
+}
+
+.avatar-image {
+  object-fit: contain; // Đảm bảo ảnh co dãn để vừa với khung chứa mà không bị cắt
+  object-position: center; // Đảm bảo ảnh căn giữa trong khung
+}

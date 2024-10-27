@@ -1,16 +1,19 @@
-
 import BlankHeader from "../../share_cpn/blank_header/BlankHeader";
 import "./Login.scss";
+import "../../styles/background.scss";
+
 function LoginPage() {
   return (
     <div className="login-page">
       <BlankHeader />
       {/* Thêm class background-image để áp dụng CSS */}
-      <img
-        src="images/background_image.png"
-        alt=""
-        className="background-image"
-      />
+      <div>
+        <img
+          src="images/background_image.png"
+          alt=""
+          className="background-image"
+        />
+      </div>
       <div className="login-container">
         <h2 className="login-title">Đăng nhập</h2>
 
@@ -36,7 +39,9 @@ function LoginPage() {
           </div>
         </div>
 
-        <button className="login-button-big">Đăng nhập</button>
+        <a href="/home-page">
+          <button className="login-button-big">Đăng nhập</button>
+        </a>
 
         <a href="/forgot-password" className="forgot-password-link">
           Quên mật khẩu?

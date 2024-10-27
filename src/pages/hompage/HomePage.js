@@ -1,10 +1,15 @@
 import Header from "../../share_cpn/header/Header";
+import "../../styles/background.scss";
 
 function Homepage() {
   return (
-    <div>
+    <div className="home-page">
       <Header />
-      <img src="images/background_image.png" alt="" />
+      <img
+        src="images/background_image.png"
+        alt=""
+        className="background-image"
+      />
     </div>
   );
 }

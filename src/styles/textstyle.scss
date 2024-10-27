@@ -1,0 +1,19 @@
+@import "./theme.scss";
+
+.title {
+  color: $text-color;
+  font-size: $font-size-large;
+  //line-height: 1.6;
+  text-align: justify;
+  font-weight: 500;
+  //margin-bottom: 15px;
+}
+
+.text-item {
+  color: $text-color;
+  font-size: $font-size-medium-1;
+  //line-height: 1.6;
+  text-align: justify;
+  font-weight: 500;
+  //margin-bottom: 15px;
+}
